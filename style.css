@@ -1,0 +1,393 @@
+/* Set page margins to zero, for edge to edge display */
+* {
+	margin: 0;
+}
+
+html {
+	margin: 0;
+}
+
+/* Set body font characteristics */
+body {
+	margin: 0;
+	font-family: 'Noto Sans';
+	font-size: 15px;
+}
+
+h1 {
+	font-family: 'Noto Serif';
+	color: #FF0000;
+}
+
+h2 {
+	font-family: 'Noto Serif';
+}
+
+h2.home {
+	font-family: 'Noto Sans';
+	text-align: center;
+}
+
+/* Set horizontal line style */
+hr {
+	border: 0;
+	height: 1px;
+	background: #333;
+	background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+/*Links*/
+a:link {
+	color: rgba(0, 0, 0, .8);
+	text-decoration: none;
+} /* unvisited link */
+a:visited {
+	color: rgba(0, 0, 0, .8);
+	text-decoration: underline;
+} /* visited link */
+a:hover {
+	color: #09b6f6;
+	text-decoration: underline;
+} /* mouse over link */
+a:active {
+	color: #063b64;
+	text-decoration: underline;
+} /* selected link */
+
+/*Links for home page/white background pages*/
+a.home:link {
+	color: rgba(0, 0, 0, .8);
+	text-decoration: none;
+} /* unvisited link */
+a.home:visited {
+	color: rgba(0, 0, 0, .8);
+	text-decoration: underline;
+} /* visited link */
+a.home:hover {
+	color: #09b6f6;
+	text-decoration: underline;
+} /* mouse over link */
+a.home:active {
+	color: #063b64;
+	text-decoration: underline;
+} /* selected link */
+#homebody {
+	background-image: url('images/background.png');
+}
+
+/* Banner--------------------------------------------------------- */
+#banner {
+	margin: 0;
+	padding: 0;
+	background-image: url('images/background.png');
+	font-size: 16px;
+}
+
+/*Links*/
+#banner a:link {
+	color: #000000;
+	text-decoration: none;
+} /* unvisited link */
+#banner a:visited {
+	color: #000000;
+	text-decoration: underline;
+} /* visited link */
+#banner a:hover {
+	color: #09b6f6;
+	text-decoration: underline;
+} /* mouse over link */
+#banner a:active {
+	color: #00000;
+	text-decoration: underline;
+} /* selected link */
+
+/*Used in banner*/
+#navigation {
+	font-family: 'Noto Sans';
+	font-size: small;
+	text-align: left;
+	color: black;
+}
+/*------------------------------------------------------------*/
+
+/* Set home containers */
+#homediv {
+	position: relative;
+	width: 70%;
+	background: #FFF;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 1.5em 1.5em;
+	color: rgba(0, 0, 0, .8);
+	line-height: 1.5;
+	margin: 50px auto;
+	min-width: 870px;
+}
+
+#homediv:before,#homediv:after {
+	z-index: -1;
+	position: absolute;
+	content: "";
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	top: 80%;
+	max-width: 300px;
+	background: rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+#homediv:after {
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform: rotate(3deg);
+	right: 10px;
+	left: auto;
+}
+
+/*
+previous style with hover effect
+#homediv {
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px #888;
+	box-shadow: 0 0 5px #888;
+	padding: 10px;
+	margin-right: 100px;
+	margin-left: 100px;
+	margin-bottom: 25px;
+	margin-top: 50px;
+	padding: 10px;
+}
+
+#homediv:hover {
+	-moz-box-shadow: 0 0 10px #FFF;
+	-webkit-box-shadow: 0 0 10px #FFF;
+	box-shadow: 0 0 10px #FFF;
+}
+*/
+p.home {
+	font-family: 'Noto Sans';
+	font-size: 15px;
+}
+
+table.home {
+	font-family: 'Noto Sans';
+	font-size: 15px;
+	text-align: center;
+	align: center;
+	margin: auto;
+}
+
+td.home {
+	text-align: center;
+}
+
+/*Div container used in Browse all phones----------------------*/
+#browsediv {
+	position: relative;
+	width: 45%;
+	background: #FFF;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 2em 1.5em;
+	color: rgba(0, 0, 0, .8);
+	line-height: 1.5;
+	margin: 50px auto;
+	min-width: 550px;
+}
+
+#browsediv:before,#browsediv:after {
+	z-index: -1;
+	position: absolute;
+	content: "";
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	top: 80%;
+	max-width: 300px;
+	background: rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+#browsediv:after {
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform: rotate(3deg);
+	right: 10px;
+	left: auto;
+}
+/*-----------------------------------------------------------------*/
+
+/*Div container used in searchdiv----------------------------------*/
+#searchdiv {
+	position: relative;
+	width: 70%;
+	background: #FFF;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 2em 1.5em;
+	color: rgba(0, 0, 0, .8);
+	line-height: 1.5;
+	margin: 50px auto;
+	min-width: 700px;
+}
+
+#searchdiv:before,#searchdiv:after {
+	z-index: -1;
+	position: absolute;
+	content: "";
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	top: 80%;
+	max-width: 300px;
+	background: rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+#searchdiv:after {
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform: rotate(3deg);
+	right: 10px;
+	left: auto;
+}
+/*----------------------------------------------------------------*/
+
+/*Div used in compare phones, special set size for consistent viewing*/
+#comparediv {
+	position: relative;
+	background: #FFF;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 2em 1.5em;
+	color: rgba(0, 0, 0, .8);
+	line-height: 1.5;
+	margin: 10px auto;
+	min-width: 550px;
+	min-height: 710px;
+	height: auto;
+}
+
+#comparediv:before,#comparediv:after {
+	z-index: -1;
+	position: absolute;
+	content: "";
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	top: 80%;
+	max-width: 300px;
+	background: rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+#comparediv:after {
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform: rotate(3deg);
+	right: 10px;
+	left: auto;
+}
+/*----------------------------------------------------------*/
+
+/*Login page div--------------------------------------------*/
+#logindiv {
+	position: relative;
+	width: 20%;
+	background: #FFF;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 2em 1.5em;
+	color: rgba(0, 0, 0, .8);
+	line-height: 1.5;
+	margin: 50px auto;
+	min-width: 300px;
+}
+
+#logindiv:before,#logindiv:after {
+	z-index: -1;
+	position: absolute;
+	content: "";
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	top: 80%;
+	max-width: 300px;
+	background: rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+#logindiv:after {
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform: rotate(3deg);
+	right: 10px;
+	left: auto;
+}
+/*---------------------------------------------------*/
+
+/*Google webfonts*/
+@font-face {
+	/*
+	unused
+	font-family: 'Droid Serif', serif;
+	font-family: 'Droid Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Serif Caption', serif;
+	font-family: 'Source Code Pro', sans-serif;
+	*/
+	font-family: 'Noto Serif', serif;
+	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Slab';
+	src: url('images/RobotoSlab-Regular.ttf');
+}
